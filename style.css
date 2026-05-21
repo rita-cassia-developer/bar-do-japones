@@ -1,7 +1,7 @@
 * {
-    margin: 0; /*Remove espaços internos e externos*/
-    padding: 0; /*Remove espaços internos e externos*/
-    box-sizing: border-box; /*Garante o tamanho exato de um*/
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
 }
  
 body {
@@ -10,48 +10,48 @@ body {
  
 header {
     display: flex;
-    align-items: center; /* Alinha todos verticalmente ao centro */
-    justify-content: space-between; /* Distribui os blocos: esquerda, centro e direita */
+    align-items: center;
+    justify-content: space-between; 
     padding: 10px 20px;
     background-color: bisque;
     border-bottom: 2px solid gray;
 }
  
 header ul {
-    display: flex; /* Faz a lista ficar na horizontal */
-    list-style: none; /* Remove as bolinhas da lista */
-    gap: 20px; /* Espaçamento entre os itens da lista */
+    display: flex;
+    list-style: none;
+    gap: 20px;
     margin: 0;
     padding: 0;
 }
  
 .logo {
-    height: 50px; /* Ajuste o tamanho da sua logo aqui */
+    height: 50px;
     width: auto;
     border-radius: 50%;
 }
  
 .carrossel {
-    width: 90%; /*Carrossel ocupa 90% da largura da tela*/
-    height: 550px; /* Altura fixa do carrossel */
-    margin: 30px auto; /* 30px em cima e embaixo, o auto vai nas laterais para centralizar o elemento */
-    overflow: hidden; /* Esconde as partes das imagens que saem do carrossel */
-    border-radius: 15px; /* Deixa as bordas arredondadas */
-    border: 2px solid gray; /* Adiciona uma borda cinza ao redor do carrossel */
+    width: 90%; 
+    height: 550px; 
+    margin: 30px auto; 
+    overflow: hidden; 
+    border-radius: 15px;
+    border: 2px solid gray; 
 }
  
 .slides {
-    display: flex; /* Coloca as imagens em linha */
-    width: 300%; /* Largura total para 3 imagens (100% cada) */
+    display: flex; 
+    width: 300%; 
     height: 100%;
     animation: slide 10s infinite; 
 }
  
 .slides img {
-    width: 33.33%; /* Cada imagem ocupa 100% do carrossel */
-    height: 100%; /*Cada imagem ocupa 100% do carrossel*/
-    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
-    object-position: bottom center; /* Alinha o centro da foto no meio do carrossel */
+    width: 33.33%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: bottom center; 
 
 }
 .slides img.sinuca {
@@ -60,7 +60,6 @@ header ul {
  
 @keyframes slide {
  
-    /* Primeira imagem */
     0% {
         transform: translateX(0%);
     }
@@ -68,8 +67,7 @@ header ul {
     30% {
         transform: translateX(0%);
     }
- 
-    /* Segunda imagem */
+   
     35% {
         transform: translateX(-33.33%);
     }
@@ -88,7 +86,6 @@ header ul {
     }
  }
 
-/* --- ADICIONANDO RESPONSIVIDADE (PARA CELULARES) --- */
 
 @media (max-width: 768px) {
 
@@ -100,25 +97,22 @@ header ul {
     }
 
     header {
-        flex-direction: column; /* Empilha logo e menu no celular */
+        flex-direction: column;
         gap: 15px;
         text-align: center;
     }
 
     header ul {
         gap: 10px;
-        font-size: 14px; /* Diminui um pouco a letra do menu */
+        font-size: 14px; 
     }
 
     .carrossel {
-        height: 250px; /* Diminui a altura do carrossel em telas pequenas */
-        width: 95%;    /* Ocupa mais espaço lateral no celular */
+        height: 250px; 
+        width: 95%;  
     }
 }
 
-
-
-/* --- NOVAS SEÇÕES DO CARDÁPIO E JOGOS --- */
 
 main {
     padding: 20px;
@@ -126,16 +120,15 @@ main {
 
 section {
     margin-bottom: 50px;
-    text-align: center; /* Centraliza os títulos H2 */
+    text-align: center;
 }
 
 section h2 {
     font-size: 2rem;
-    color: #4b2c20; /* Tom de marrom escuro */
+    color: #4b2c20; 
     margin-bottom: 20px;
 }
 
-/* Container que envolve imagem e texto */
 .bebidas, 
 .salgadinhosDocinhos, 
 .bilhar {
@@ -144,50 +137,46 @@ section h2 {
     justify-content: center;
     gap: 30px;
     max-width: 1000px;
-    margin: 0 auto; /* Centraliza o bloco na tela */
+    margin: 0 auto; 
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.4); /* Fundo leve para destacar */
+    background-color: rgba(255, 255, 255, 0.4); 
     border-radius: 15px;
 }
 
-/* Inverte a ordem apenas na seção de porções para criar um visual dinâmico */
 .salgadinhosDocinhos {
     flex-direction: row-reverse;
 }
 
-/* Estilização das imagens das seções */
 .bebidas img, 
 .salgadinhosDocinhos img, 
 .bilhar img {
     width: 100%;
-    max-width: 400px; /* Tamanho máximo da imagem no PC */
+    max-width: 400px; 
     height: auto;
     border-radius: 12px;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
 }
 
-/* Estilização dos textos das seções */
+
 section p {
     font-size: 1.2rem;
     line-height: 1.6;
     color: #333;
     max-width: 450px;
-    text-align: left; /* Texto alinhado à esquerda no PC */
+    text-align: left; 
 }
-
-/* --- RESPONSIVIDADE PARA ESTA PARTE --- */
 
 @media (max-width: 768px) {
     .bebidas, 
     .salgadinhosDocinhos, 
     .bilhar {
-        flex-direction: column; /* Empilha imagem e texto no celular */
+        flex-direction: column; 
         text-align: center;
         gap: 15px;
     }
 
     section p {
-        text-align: center; /* Centraliza o texto no celular */
+        text-align: center;
         font-size: 1.1rem;
     }
 
@@ -195,7 +184,7 @@ section p {
 .bebidas img, 
 .salgadinhosDocinhos img, 
 .bilhar img  {
-        max-width: 100%; /* Imagem ocupa a largura total no celular */
+        max-width: 100%; 
     }
 
     section h2 {
