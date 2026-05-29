@@ -3,9 +3,9 @@
 Este é um projeto para um comércio familiar que desenvolvi para provar meu capricho em desenvolvimento Web. 
 
 
-**Veja o projeto:** []
+**Veja o projeto:** [https://rita-cassia-developer.github.io/bar-do-japones/]
 
-Eu me preocupo com **acessibilidade e boas práticas**, é essencial e portanto está presente em todos os meus projetos.**
+Eu me preocupo com **acessibilidade e boas práticas**, é essencial e portanto está presente em todos os meus projetos.
 
 ---
 
