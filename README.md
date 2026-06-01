@@ -1,6 +1,6 @@
 🚀 **LANDING PAGE COMERCIAL - BAR DO JAPONES**
 
-Este é um projeto para um comércio familiar que desenvolvi para provar meu capricho em desenvolvimento Web. 
+Este é um projeto para um comércio familiar que desenvolvi para provar meu capricho em desenvolvimento Web e **Clean Code**. 
 
 
 **Veja o projeto:** [https://rita-cassia-developer.github.io/bar-do-japones/]
