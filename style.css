@@ -25,6 +25,17 @@ body {
     padding: 0; 
 } 
 
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
 .logo { 
     height: 50px; 
     width: auto; 
@@ -116,10 +127,11 @@ section p {
 
 .main-footer { 
     background-color: #000000; 
-    padding: 20px 40px; 
+    padding: 30px 40px; 
     display: flex; 
-    justify-content: space-between; 
+    flex-direction: column;
     align-items: center; 
+    gap: 15px;
     width: 100%; 
 } 
 
@@ -131,10 +143,11 @@ section p {
 
 .main-footer address {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
-    width: auto;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
     font-style: normal;
 }
 
@@ -148,6 +161,8 @@ section p {
 
 .main-footer a {
     color: #ffffff;
+    font-size: 14px; 
+    font-family: Arial, sans-serif; 
     text-decoration: none;
 }
 
@@ -156,18 +171,6 @@ section p {
 }
 
 @media (max-width: 768px) { 
-    .main-footer { 
-        flex-direction: column; 
-        gap: 15px; 
-        text-align: center; 
-        padding: 20px 10px; 
-    } 
-    
-    .main-footer address {
-        flex-direction: column;
-        gap: 10px;
-    }
-
     .main-header { 
         flex-direction: column; 
         gap: 15px; 
@@ -175,7 +178,7 @@ section p {
     } 
     
     .main-nav ul { 
-        gap: 10px; 
+        gap: 15px; 
         font-size: 14px; 
     } 
     
@@ -202,4 +205,9 @@ section p {
     section h2 { 
         font-size: 1.6rem; 
     } 
+
+    .main-footer address {
+        flex-direction: column;
+        gap: 12px;
+    }
 }
