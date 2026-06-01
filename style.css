@@ -4,9 +4,18 @@
     box-sizing: border-box; 
 } 
 
+html, body {
+    font-family: Arial, sans-serif;
+}
+
 body { 
     background-color: rgba(255, 228, 196, 0.682); 
 } 
+
+a:focus, button:focus {
+    outline: 3px solid #4b2c20;
+    outline-offset: 4px;
+}
 
 .main-header { 
     display: flex; 
@@ -16,6 +25,13 @@ body {
     background-color: bisque; 
     border-bottom: 2px solid gray; 
 } 
+
+.main-header h1 {
+    font-size: 1.3rem;
+    color: #4b2c20;
+    margin: 0 15px;
+    text-align: center;
+}
 
 .main-nav ul { 
     display: flex; 
@@ -29,7 +45,6 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    font-family: Arial, sans-serif;
 }
 
 .main-nav a:hover {
@@ -138,7 +153,6 @@ section p {
 .main-footer h3 {
     color: #ffffff;
     font-size: 16px;
-    font-family: Arial, sans-serif;
 }
 
 .main-footer address {
@@ -154,7 +168,6 @@ section p {
 .main-footer p { 
     color: #ffffff; 
     font-size: 14px; 
-    font-family: Arial, sans-serif; 
     margin: 0; 
     padding: 0; 
 } 
@@ -162,7 +175,6 @@ section p {
 .main-footer a {
     color: #ffffff;
     font-size: 14px; 
-    font-family: Arial, sans-serif; 
     text-decoration: none;
 }
 
@@ -186,6 +198,10 @@ section p {
         height: 250px; 
         width: 95%; 
     } 
+
+    .slides img {
+        object-position: center;
+    }
     
     .bebidas-container, .porcoes-container, .jogos-container { 
         flex-direction: column; 
