@@ -3,64 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bar do Japonês</title>
+    <title>Bar do Japonês - Bebidas, Petiscos e Diversão em Califórnia</title>
+    <!-- Adicionada meta description para melhorar o SEO no Google -->
+    <meta name="description" content="Venha conhecer o Bar do Japonês no centro de Califórnia - PR. Cerveja gelada, petiscos e mesas de bilhar para você se divertir.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img class="logo" src="logo-header.png" alt="logomarca">
-        <h1>🥳 Seja Bem vindo(a) ao Bar do Japonês 🍻</h1>
-        <ul>
-            <li><a href="#secA">Home</a></li>
-            <li><a href="#secB">Bebidas</a></li>
-            <li><a href="#secC">Petiscos</a></li>
-            <li><a href="#secD">Jogos</a></li>
-            <li><a href="#secE">Sobre nós</a></li>
-        </ul>
+    
+    <header class="main-header">
+        <img class="logo" src="logo-header.png" alt="Logotipo oficial do Bar do Japonês">
+        <h1>🥳 Seja Bem-vindo(a) ao Bar do Japonês 🍻</h1>
+        <nav class="main-nav" aria-label="Navegação principal">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#bebidas">Bebidas</a></li>
+                <li><a href="#petiscos">Petiscos</a></li>
+                <li><a href="#jogos">Jogos</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+            </ul>
+        </nav>
     </header>
+    
     <main>
-        <section id="secA" class="carrossel">
+        <section id="home" class="carrossel" aria-label="Galeria de fotos do bar">
             <div class="slides">
-        <img src="img1.jpeg" alt="uma prateleira com variedade de litros de bebidas">
-        <img src="img2.jpeg" alt="balcão do bar">
-        <img src="img3.jpeg" alt="duas mesas de bilhar" class="sinuca">  
+                <img src="img1.jpeg" alt="Prateleira abastecida com variedade de garrafas de bebidas destiladas">
+                <img src="img2.jpeg" alt="Visão geral do balcão de atendimento do bar">
+                <img src="img3.jpeg" alt="Duas mesas de bilhar profissionais alinhadas no salão" class="sinuca">  
             </div>
         </section>
-       <section id="secB">
-            <h2>Bebidas em Geral</h2>
-            <div class="bebidas">
-                <img src="https://images.pexels.com/photos/19733808/pexels-photo-19733808.jpeg" alt="copo de cerveja">
+        
+        <section id="bebidas" aria-labelledby="bebidas-title">
+            <h2 id="bebidas-title">Bebidas em Geral</h2>
+            <div class="bebidas-container">
+                <img src="https://images.pexels.com/photos/19733808/pexels-photo-19733808.jpeg" alt="Copo de vidro cheio de cerveja gelada com colarinho de espuma" loading="lazy">
                 <p>Temos variedades de bebidas para você que gosta de tomar uma biritinha.</p>
             </div>
         </section>
-        <section id="secC">
-            <h2>Doces e Salgadinhos</h2>
-            <div class="salgadinhosDocinhos">
-            <img src="https://images.pexels.com/photos/35285847/pexels-photo-35285847.jpeg" alt="balcão de doces">
-            <p>Apresentamos nossas variedades de doces e salgadinhos que são um sucesso de vendas.</p>
+        
+        <section id="petiscos" aria-labelledby="petiscos-title">
+            <h2 id="petiscos-title">Doces e Salgadinhos</h2>
+            <div class="porcoes-container">
+                <img src="https://images.pexels.com/photos/35285847/pexels-photo-35285847.jpeg" alt="Balcão expositor de vidro com doces variados" loading="lazy">
+                <p>Apresentamos nossas variedades de doces e salgadinhos que são um sucesso de vendas.</p>
             </div>
         </section>
-        <section id="secD">
-            <h2>Jogos para se divertir</h2>
-            <div class="bilhar">
-                <img src="img3.jpeg" alt="mesa de jogos de bilhar">
+        
+        <section id="jogos" aria-labelledby="jogos-title">
+            <h2 id="jogos-title">Jogos para se divertir</h2>
+            <div class="jogos-container">
+                <img src="img3.jpeg" alt="Detalhe da mesa de jogo de bilhar com as bolas organizadas" loading="lazy">
                 <p>E ainda temos jogos de bilhar para você se divertir com a família e os amigos.</p>
             </div>
         </section>
-
     </main>
-    <footer id="secE">
-        <p>Bar do Japonês</p>
-        <p>Rua Araguaia, 239</p>
-        <p>Centro</p>
-        <p>Califórnia - PR</p>
-         <p>altamircalixto18@gmail.com</p>
-         <p>(43) 99649-0658</p>
-
+    
+    <footer id="sobre" class="main-footer">
+        <h3>Bar do Japonês</h3>
+        <address>
+            <p>📍 Rua Araguaia, 239 - Centro, Califórnia - PR</p>
+            <p>📧 <a href="mailto:altamircalixto18@gmail.com">altamircalixto18@gmail.com</a></p>
+            <p>📞 <a href="tel:+5543996490658">(43) 99649-0658</a></p>
+        </address>
     </footer>
+    
     <script src="script.js"></script>
 </body>
-
 </html>
-
-   
