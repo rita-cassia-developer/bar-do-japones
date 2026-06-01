@@ -195,7 +195,9 @@ section p {
         font-size: 1.1rem; 
     } 
     
-    .bebidas-container img, .porcoes-container img, .jogos-container img { 
+    .bebidas-container img, 
+    .porcoes-container img, 
+    .jogos-container img { 
         max-width: 100%; 
     } 
     
