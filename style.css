@@ -8,7 +8,7 @@ body {
     background-color: rgba(255, 228, 196, 0.682); 
 } 
 
-header { 
+.main-header { 
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
@@ -17,7 +17,7 @@ header {
     border-bottom: 2px solid gray; 
 } 
 
-header ul { 
+.main-nav ul { 
     display: flex; 
     list-style: none; 
     gap: 20px; 
@@ -82,7 +82,7 @@ section h2 {
     margin-bottom: 20px; 
 } 
 
-.bebidas, .salgadinhosDocinhos, .bilhar { 
+.bebidas-container, .porcoes-container, .jogos-container { 
     display: flex; 
     align-items: center; 
     justify-content: center; 
@@ -94,11 +94,11 @@ section h2 {
     border-radius: 15px; 
 } 
 
-.salgadinhosDocinhos { 
+.porcoes-container { 
     flex-direction: row-reverse; 
 } 
 
-.bebidas img, .salgadinhosDocinhos img, .bilhar img { 
+.bebidas-container img, .porcoes-container img, .jogos-container img { 
     width: 100%; 
     max-width: 400px; 
     height: auto; 
@@ -114,8 +114,7 @@ section p {
     text-align: left; 
 } 
 
-
-#secE { 
+.main-footer { 
     background-color: #000000; 
     padding: 20px 40px; 
     display: flex; 
@@ -124,7 +123,22 @@ section p {
     width: 100%; 
 } 
 
-#secE p { 
+.main-footer h3 {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.main-footer address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: auto;
+    font-style: normal;
+}
+
+.main-footer p { 
     color: #ffffff; 
     font-size: 14px; 
     font-family: Arial, sans-serif; 
@@ -132,22 +146,35 @@ section p {
     padding: 0; 
 } 
 
+.main-footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main-footer a:hover {
+    text-decoration: underline;
+}
 
 @media (max-width: 768px) { 
-    #secE { 
+    .main-footer { 
         flex-direction: column; 
         gap: 15px; 
         text-align: center; 
         padding: 20px 10px; 
     } 
     
-    header { 
+    .main-footer address {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-header { 
         flex-direction: column; 
         gap: 15px; 
         text-align: center; 
     } 
     
-    header ul { 
+    .main-nav ul { 
         gap: 10px; 
         font-size: 14px; 
     } 
@@ -157,7 +184,7 @@ section p {
         width: 95%; 
     } 
     
-    .bebidas, .salgadinhosDocinhos, .bilhar { 
+    .bebidas-container, .porcoes-container, .jogos-container { 
         flex-direction: column; 
         text-align: center; 
         gap: 15px; 
@@ -168,7 +195,7 @@ section p {
         font-size: 1.1rem; 
     } 
     
-    .bebidas img, .salgadinhosDocinhos img, .bilhar img { 
+    .bebidas-container img, .porcoes-container img, .jogos-container img { 
         max-width: 100%; 
     } 
     
