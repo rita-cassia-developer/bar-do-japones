@@ -61,7 +61,7 @@ Este projeto foi uma excelente oportunidade para aprimorar as seguintes habilida
 Sugestões e contribuições são sempre bem-vindas! Sinta-se à vontade para abrir *issues* ou enviar *pull requests* com melhorias ou correções.
 
 
-## 👤 Autor
+## 👤 Autora
 
 **Rita de Cássia Calixto**
 
